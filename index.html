@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PTV – CÔNG TY CÔ PHẦN THƯƠNG MẠI DỊCH VỤ PHƯỚC THỊNH VN</title>
+<style>
+  body{font:16px/1.6 system-ui,Segoe UI,Roboto,Arial;margin:0;color:#1d2733;background:#f7f9fc}
+  header,section,footer{max-width:900px;margin:auto;padding:20px}
+  header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e6ebf2}
+  .logo{font-weight:800} .logo b{background:#2dd4bf;color:#083344;padding:4px 8px;border-radius:8px;margin-right:8px}
+  nav a{margin-left:12px;color:#334155;text-decoration:none} nav a:hover{text-decoration:underline}
+  h1,h2{margin:.4em 0} .lead{color:#475569}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:#fff;border:1px solid #e6ebf2;border-radius:12px;padding:14px}
+  .muted{color:#64748b}
+  form{display:grid;gap:10px}
+  input,textarea{padding:10px;border-radius:8px;border:1px solid #cbd5e1}
+  button{padding:10px 14px;border:0;border-radius:10px;background:#2563eb;color:#fff;font-weight:600;cursor:pointer}
+  footer{border-top:1px solid #e6ebf2;color:#64748b;text-align:center}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo"><b>PTV</b>Công ty CP TM DV Phước Thiên Vượng</div>
+    <nav>
+      <a href="#dichvu">Dịch vụ</a>
+      <a href="#gioithieu">Giới thiệu</a>
+      <a href="#lienhe">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Giải pháp thương mại trọn gói</h1>
+    <p class="lead">Phân phối – Logistics – Thương mại điện tử cho doanh nghiệp vừa & nhỏ.</p>
+    <div class="grid" id="dichvu">
+      <div class="card"><h3>Phân phối</h3><p class="muted">Mạng lưới sỉ/lẻ, quản lý tồn kho, chính sách giá rõ ràng.</p></div>
+      <div class="card"><h3>Logistics</h3><p class="muted">Nhập–xuất–lưu kho tối ưu, giao nhanh, báo cáo minh bạch.</p></div>
+      <div class="card"><h3>TMĐT</h3><p class="muted">Vận hành gian hàng, quảng cáo hiệu quả, tối ưu chuyển đổi.</p></div>
+    </div>
+  </section>
+
+  <section id="gioithieu">
+    <h2>Thông tin doanh nghiệp</h2>
+    <p class="muted">
+      MST: <b>3703332011</b><br>
+      Địa chỉ: Số 127 Đường DT 747, P. Uyên Hưng, TX Tân Uyên, Bình Dương, Việt Nam<br>
+      Email: <a href="mailto:nguyenhuanhoan25062000@gmail.com">nguyenhuanhoan25062000@gmail.com</a> •
+      Hotline: <a href="tel:0772126873">0772 126 873</a>
+    </p>
+  </section>
+
+  <section id="lienhe">
+    <h2>Liên hệ</h2>
+    <form onsubmit="event.preventDefault();alert('Đã gửi! Chúng tôi sẽ liên hệ sớm.');this.reset();">
+      <input placeholder="Họ và tên" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Nội dung yêu cầu" required></textarea>
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+  </section>
+
+  <footer>© <span id="y"></span> PTV • All rights reserved</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
